@@ -1,7 +1,7 @@
 ---
 title: VRA Installation & Configuration
 meta_desc: Information on how to install the VRA provider.
-layout: installation
+layout: package
 ---
 
 ## Installation
@@ -12,6 +12,16 @@ The Pulumi VRA provider is available as a package in all Pulumi languages:
 * Python: [`pulumiverse_vra`](https://pypi.org/project/pulumiverse-vra/)
 * Go: [`github.com/pulumiverse/pulumi-vra/sdk/go/vra`](https://pkg.go.dev/github.com/pulumiverse/pulumi-vra/sdk)
 * .NET: [`Pulumiverse.VRA`](https://www.nuget.org/packages/Pulumiverse.VRA)
+
+### Provider Binary
+
+The VRA provider binary is a third party binary. It can be installed using the pulumi plugin command.
+
+```bash
+pulumi plugin install resource vra <version> --server github://api.github.com/pulumiverse
+```
+
+Replace the version string with your desired version.
 
 ## Setup
 
